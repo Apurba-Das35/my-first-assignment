@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/first-style.css" />
   </head>
   <body>
@@ -126,28 +127,59 @@
       <div class="focus-content">
         <h2>Ready to focus better</h2>
         <p>This template instantly leveled up our presence.” - Studio Vertex</p>
-        <a href="#" class="cta-button">Get Started Free</a>
+        <a href="#" class="focus-button">Get Started Free</a>
       </div>
-      <div><img
+      <div>
+        <img
           src="Assets/wc-big.png"
           alt="Webflow Conference"
           class="focus-image"
-        /></div>
+        />
+      </div>
     </section>
 
-    <section class="contact">
-      <h2>Let's Get in Touch</h2>
-      <form>
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Name" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class="btn">Get in Touch</button>
-      </form>
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-text">
+          <h2>Let's Get in Touch</h2>
+        </div>
+        <form class="contact-form">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+          />
+
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="full name" required />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="write your message...."
+            required
+          ></textarea>
+
+          <button type="submit">Get in Touch</button>
+        </form>
+      </div>
     </section>
 
     <footer class="footer">
-      <div class="logo">LOGO</div>
-      <p>Copyright © 2025</p>
+      <div class="footer-logo">LOGO</div>
+      <p class="footer-description">
+        Ready to elevate your online presence? Contact us today to discuss<br>your
+        project and discover how we can bring your vision to life.
+      </p>
+      <nav class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">How it Works</a>
+        <a href="#">Services</a>
+      </nav>
     </footer>
   </body>
 </html>
